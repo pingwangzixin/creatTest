@@ -1,0 +1,202 @@
+/*倒入试卷编辑题目页*/
+.zy_cover{padding: 20px;}
+.zy_paper_title{padding: 0 !important; border: 1px solid #e0e2e3; border-radius: 5px;}
+.zy_paper_title .tit{box-sizing: border-box; height: 48px; padding: 20px 20px 0; background: #efefef; border: none;}
+.zy_paper_title .open_analysis{}
+.zy_paper_title .open_analysis i{}
+.zy_paper_title .upload_box{height: 200px; line-height: 200px; padding: 20px; text-align: center;}
+.zy_paper_title .upload_box .upload{}
+.zy_paper_title .upload_box .upload label{color: #5093e1; cursor: pointer;}
+.zy_paper_title .upload_box .upload input[type=file]{display: none; cursor: pointer;}
+.zy_paper_title_btn{margin: 8px 0; text-align: center;}
+.zy_paper_title_btn button{width: auto; height: 38px; line-height: 38px; padding: 0 10px; margin: 0 10px;}
+.zy_paper_title_btn .cancle{background: #ededed;}
+.zy_paper_title_btn .middle{color: #5093e1; border: 1px solid #5093e1; background: #fff;}
+.zy_paper_title_btn .sure{color: #fff; background: #5093e1;}
+
+/*倒入试卷编辑卷面*/
+.zy_paper_main{padding: 20px 20px 50px;}
+.zy_paper_main .tit{padding-bottom: 6px; margin-bottom: 16px; border-bottom: 1px solid #e5e5e5;}
+.zy_paper_main .tit span{font-size: 16px;}
+.zy_paper_main .tit ul{}
+.zy_paper_main .tit ul li{float: left; color: #26b295; margin-left: 30px; cursor: pointer;}
+
+.zy_paper_main .task_list{}
+.zy_paper_main .big_question_list{margin-bottom: 10px;}
+.zy_paper_main .task_list .head{position: relative; padding: 22px 10px 10px;}
+.zy_paper_main .task_list .head .btn{right: 18px;}
+.zy_paper_main .task_list .head.active{background: #EFEFEF;}
+.zy_paper_main .task_list .head:hover{background: #EFEFEF;}
+.zy_paper_main .task_list .head .tit_num{}
+.zy_paper_main .task_list .head .tit_cont{width: 1100px;}
+
+.zy_paper_main .task_list .head .edit_big_tit{/*display: none; */width: 1100px;}
+.zy_paper_main .task_list .head .edit_big_tit textarea{box-sizing: border-box; width: 84%; height: 50px; padding: 2px 6px; line-height: 22px; border: 1px solid #eee; outline: none;}
+.zy_paper_main .task_list .head .edit_big_tit .btn_group{margin: 22px 0 0 20px;}
+.zy_paper_main .task_list .head .edit_big_tit .btn_group button{width: 64px; height: 28px}
+.zy_paper_main .task_list .head .edit_big_tit .btn_group button.sure{background: #1abc9c; color: #fff;}
+.zy_paper_main .task_list .head .edit_big_tit .btn_group button.cancel{background: #f0f0f0; border-color: #f0f0f0; color: #4f5355;}
+
+.zy_paper_main .btn{/*display: none;*/ position: absolute; top: 0; right: 0; height: 22px; line-height: 22px; color: #5093e1; background: #EFEFEF;}
+.zy_paper_main .btn b{display: inline-block; padding: 0 10px; margin: 0 2px; text-align: center; font-weight: normal; cursor: pointer;}
+
+.zy_paper_main .task_list .cont{}
+
+.zy_paper_main .task_list .cont{position: relative;}
+.zy_paper_main .task_list .cont>li .group_head{position: relative; margin-bottom: 10px;}
+.zy_paper_main .task_list .cont>li .group_head .tit_cont{min-height: 38px; padding: 20px 10px; line-height: 24px; background: #efefef;}
+.zy_paper_main .task_list .cont>li .group_head .editor_unified{/*display: none;*/ padding-top: 22px;}
+
+.zy_paper_main .task_list .cont>li{position: relative; padding: 10px 10px; margin-bottom: 10px; border: 1px solid transparent; border-radius: 5px;}
+.zy_paper_main .task_list .cont>li.active{border-color: #5093e1;}
+
+.zy_paper_main .task_list .cont>li .question{position: relative; padding: 30px 24px 10px; border: 1px solid transparent; border-radius: 5px;}
+.zy_paper_main .task_list .cont>li .question:hover{border-color: #ddd;}
+.zy_paper_main .task_list .cont>li .question.active{border-color: #ddd;}
+
+.zy_paper_main .task_list .cont>li .question_option{margin-bottom: 10px;}
+.zy_paper_main .task_list .cont>li .question_option .question_type>b{position: absolute; left: 0; top: 6px; font-weight: normal; width: 24px; height: 24px; line-height: 24px; text-align: center; background: #666; color: #fff;}
+.zy_paper_main .task_list .cont>li .question_option .question_type select{height: 30px; padding: 0 10px; margin-left: 6px; border: 1px solid #e5e5e5; border-radius: 5px; outline: none; cursor: pointer;}
+.zy_paper_main .task_list .cont>li .question_option .question_type .question_template{max-width: 84%; margin-left: 16px;}
+.zy_paper_main .all_tem{/*display: none;*/width: 750px;}
+.zy_paper_main .all_tem>span{line-height: 28px;}
+.zy_paper_main .all_tem ul{margin: 0 10px;}
+.zy_paper_main .all_tem ul li:not(.option_btn){float: left; box-sizing: border-box; width: 28px; height: 28px; line-height: 28px; text-align: center; margin: 0 4px 4px; border: 1px solid #3f3f3f; border-radius: 50%; cursor: pointer;}
+.zy_paper_main .all_tem ul li.active{color: #fff; background: #5093e1; border-color: transparent;}
+.zy_paper_main .all_tem ul li.option_btn{margin-left: 10px; line-height: 28px;}
+.zy_paper_main .all_tem ul li.option_btn i{font-size: 20px; color: #5BAC84; font-weight: bold; cursor: pointer;}
+.zy_paper_main .all_tem ul li.option_btn i:last-of-type{color: #F594AA; }
+/*
+.zy_paper_main .task_list .cont>li .question_option .question_type .question_template .all_tem{ max-width: 96%; min-width: 750px;}
+.zy_paper_main .task_list .cont>li .question_option .question_type .question_template .all_tem>span{line-height: 28px;}
+.zy_paper_main .task_list .cont>li .question_option .question_type .question_template .all_tem ul{margin: 0 10px;}
+.zy_paper_main .task_list .cont>li .question_option .question_type .question_template .all_tem ul li:not(.option_btn){float: left; box-sizing: border-box; width: 28px; height: 28px; line-height: 28px; text-align: center; margin: 0 4px 4px; border: 1px solid #3f3f3f; border-radius: 50%; cursor: pointer;}
+.zy_paper_main .task_list .cont>li .question_option .question_type .question_template .all_tem ul li.active{color: #fff; background: #5093e1; border-color: transparent;}
+.zy_paper_main .task_list .cont>li .question_option .question_type .question_template .all_tem ul li.option_btn{margin-left: 10px; line-height: 28px;}
+.zy_paper_main .task_list .cont>li .question_option .question_type .question_template .all_tem ul li.option_btn i{font-size: 20px; color: #5BAC84; font-weight: bold; cursor: pointer;}
+.zy_paper_main .task_list .cont>li .question_option .question_type .question_template .all_tem ul li.option_btn i:last-of-type{color: #F594AA; }*/
+/*.zy_paper_main .task_list .cont>li .question_option .question_type .question_template .all_tem ul li.btn img{vertical-align: middle; cursor: pointer;}*/
+
+.zy_paper_main .task_list .cont>li .question_option .question_type .question_template .single{}
+.zy_paper_main .task_list .cont>li .question_option .question_type .question_template .multiple{}
+.zy_paper_main .task_list .cont>li .question_option .question_type .question_template .judge{}
+
+.zy_paper_main .task_list .cont>li .qusetion_main{}
+.zy_paper_main .task_list .cont>li .qusetion_main .normal_state{}
+.zy_paper_main .task_list .cont>li .qusetion_main .normal_state .stem_cont{}
+.zy_paper_main .task_list .cont>li .qusetion_main .normal_state .analysis_answer{line-height: 24px; padding: 8px; margin-top: 10px; border-radius: 2px; background: #EAEAEA;}
+/*vue动画*/
+.analysis-enter,.analysis-leave-to{opacity:  0; /*transform: translateY(70px);*/}
+.analysis-enter-active,.analysis-leave-active{transition: all .5s ease;}
+.zy_paper_main .task_list .cont>li .qusetion_main .edit_state{}
+/* .zy_paper_main .task_list .cont>li .qusetion_main .edit_state .analysis_cont{-display: none;} */
+.zy_paper_main .task_list .cont>li .qusetion_main .edit_state .analysis_answer>span{display: block; margin: 8px 0;}
+/* .zy_paper_main .task_list .cont>li .qusetion_main .edit_state .stem_cont{-display: none;} */
+.zy_paper_main .task_list .cont>li .qusetion_main .edit_state .editor_unified{}
+
+/* 编辑器图片缩放按钮 */
+.img_zoom{display: none; position: absolute; top: 100px; left: 0; z-index: 999;}
+.img_zoom .img_zoom_btn{position: relative; width: 76px; height: 34px; background: #eaeaea; border-radius: 2px;}
+.img_zoom .img_zoom_btn:after{position: absolute; bottom: -12px; left: 50%; margin-left: -6px; content: ''; width: 0; height: 0; border: 6px solid transparent; border-top-color: #eaeaea;}
+.img_zoom .img_zoom_btn b{width: 22px; height: 22px; line-height: 22px; text-align: center; font-size: 19px; color: #eaeaea; background: #5093e1; border-radius: 50%; margin: 6px 8px; -moz-user-select: none; -khtml-user-select: none; user-select: none; cursor: pointer;}
+.img_zoom .img_zoom_btn b.enlarge{}
+.img_zoom .img_zoom_btn b.narrow{}
+
+/*卷面设置*/
+.zy_set_answer{}
+.zy_set_answer .answer_list{}
+.zy_set_answer .answer_list{padding-bottom: 10px; border-bottom: 1px solid #ddd;}
+.zy_set_answer .answer_list .big_ques .top{margin-bottom: 16px;}
+.zy_set_answer .answer_list .big_ques .top>b{font-weight: normal;}
+.zy_set_answer .answer_list select.question_type_select{height: 30px; padding: 0 10px; margin-left: 6px; border: 1px solid #e5e5e5; border-radius: 5px; outline: none; cursor: pointer;}
+.zy_set_answer .answer_list .big_ques .bottom{background: #d9e9fb; margin-bottom: 10px; padding-top: 6px; border-radius: 5px;}
+.zy_set_answer .answer_list .big_ques .bottom .group_right{width: 1038px;}
+.zy_set_answer .answer_list .big_ques .bottom .small_list{box-sizing: border-box; width: 1020px; margin-left: 10px;}
+.zy_set_answer .answer_list .big_ques .bottom .small_list > select{margin-right: 16px;}
+.zy_set_answer .answer_list .big_ques .bottom .small_list > select + .answer_template .all_tem{width: 730px;}
+.zy_set_answer .answer_list .big_ques .bottom .small_list .answer_template{height: 32px; margin: 2px 0;}
+.zy_set_answer .answer_list .big_ques .bottom .small_list .answer_template>b{line-height: 28px; font-weight: normal; margin-right: 6px;}
+.zy_set_answer .answer_list .big_ques .bottom .small_list .answer_template .score{margin-right: 10px;}
+.zy_set_answer .answer_list .big_ques .bottom .small_list .answer_template .score p{display: inline-block; width: 44px;}
+.zy_set_answer .answer_list .big_ques .bottom .small_list .answer_template .score p i{cursor: pointer;}
+.zy_set_answer .answer_list .big_ques .bottom .small_list .answer_template .score input{box-sizing: border-box; width: 70px; height: 28px; padding: 0 10px; text-align: center; border: 1px solid #ddd; border-radius: 5px; outline: none;}
+.zy_set_answer .answer_list em{font-style: normal;}
+/*.zy_set_answer .answer_list>li .bottom ul li{}*/
+.zy_set_answer .all_tem ul li.active{background: #1abc9c;}
+.zy_set_answer .all_tem .detailed{margin-right: 10px;}
+.zy_set_answer .all_tem .detailed input{box-sizing: border-box; width: 40px; height: 28px; padding: 0 10px; text-align: center; margin-right: 10px; border: 1px solid #ddd; border-radius: 5px; outline: none;}
+
+
+/*弹框*/
+/*快捷合并题目组*/
+.quick_merge_group{}
+.quick_merge_group .con{width: 402px; height: 234px;}
+.quick_merge_group .con .main_cont p:first-of-type{margin-bottom: 10px;}
+
+/*移动大题/小题*/
+.move_ques{}
+.move_ques .con{width: 402px; height: 234px;}
+.move_ques .con .main_cont p:first-of-type{margin-bottom: 10px;}
+.move_ques .con .main_cont p select{box-sizing: border-box; width: 180px; height: 30px; padding: 0 10px; border: 1px solid #e5e5e5; border-radius: 5px; cursor: pointer; outline: none;}
+
+/*设置起始题号*/
+.start_ques .con{width: 402px; height: 234px;}
+
+/*拆分大题*/
+.split_big_ques .con{width: 402px; height: 234px;}
+
+/*2020.02.26 zy  examPaperEdit*/
+.knowledge_point{}
+.knowledge_point>div{margin-top: 6px;}
+.knowledge_point>div>span{line-height: 24px;}
+.knowledge_point>div>span+ul{}
+.knowledge_point>div>span+ul li{line-height: 24px; margin: 0 6px;}
+.knowledge_point>div>span+ul li b{font-weight: normal;}
+.knowledge_point .difficult ul{}
+.knowledge_point .difficult ul li{}
+.knowledge_point .difficult ul li label{cursor: pointer;}
+.knowledge_point .difficult ul li input[type=radio]{outline: none; vertical-align: -2px; cursor: pointer;}
+.knowledge_point .topic{position: relative;}
+.knowledge_point .topic>ul{} 
+.knowledge_point .topic>ul li{padding: 0 6px; margin-bottom: 6px; border: 1px solid #ccc; border-radius: 10px;} 
+.knowledge_point .topic>ul li:last-of-type{background: #eee; border-color: transparent; cursor: pointer;}
+.knowledge_point .topic>ul li i.iconfont{font-size: 10px; cursor: pointer;}
+.knowledge_linkage{z-index: 1; position: absolute; top: 200px; left: 68px;}
+.knowledge_linkage ul{box-sizing: border-box; width: 200px; height: 250px; background: #fff; border: 1px solid #ccc;}
+.knowledge_linkage ul li{padding: 0 6px; line-height: 25px; cursor: pointer;}
+.knowledge_linkage ul li.active{background: #eee;}
+.knowledge_linkage ul li label{cursor: pointer;}
+.knowledge_linkage ul li input[type==checkbox]{outline: none; cursor: pointer;}
+.knowledge_linkage ul li span{}
+.knowledge_linkage ul li .children{box-sizing: border-box; position: absolute; top: 0; left: 199px;}
+
+
+/*2020.03.18 zy*/
+.zy_float {
+  position: fixed;
+  top: 300px;
+  margin-left: 5px;
+  font-size: 12px;
+}
+.zy_float .selected_topic {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  margin-bottom: 6px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.toSelect {
+  background: #016ae0;
+  cursor: pointer;
+}
+.toSelectIcon {
+  font-size: 24px;
+  display: block;
+}
+.examBasket {
+  background: #494949;
+  cursor: pointer;
+  padding: 7px 5px;
+}

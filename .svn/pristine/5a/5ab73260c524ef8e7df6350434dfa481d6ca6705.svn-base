@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="renderer" content="webkit">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>完善卷面</title>
+    <link rel="stylesheet" href="../../css/reset.css" charset="utf-8"/>
+    <link rel="stylesheet" href="../../css/public.css"/>
+    <link rel="stylesheet" href="../../iconFont/iconfont.css">
+    <link rel="stylesheet" href="../../css/main.css"/>
+
+    <script src="../../common/js/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/public.js"></script>
+    <!--<script src="../../js/testAssembly/examPaperEdit.js" type="text/javascript" charset="utf-8"></script>-->
+    
+    <!-- 文本编辑 -->
+    <script src="../../common/ueditor/ueditor.config.js"></script>
+    <script src="../../common/ueditor/ueditor.all.js"></script>
+    
+    <!--语言-->
+    <script src="../../common/ueditor/lang/zh-cn/zh-cn.js"></script>
+    
+    <!-- 数学公式 -->
+    <script  src="../../common/ueditor/kityformula-plugin/addKityFormulaDialog.js"></script>
+    <script  src="../../common/ueditor/kityformula-plugin/getKfContent.js"></script>
+    <script  src="../../common/ueditor/kityformula-plugin/defaultFilterFix.js"></script> 
+		
+</head>
+<body>
+        <!-- 头部 固定格式类名 -->
+		<div class="header"></div>
+		<!-- 主体内容 -->
+		<div class="g_main">
+			<div class="g_border">
+                <!-- 组卷头部筛选 固定格式类名 -->
+                <div class="test_paper_screen"></div>
+            </div>
+
+            <!-- 进度条 固定格式类名 -->
+            <div class="process"></div>
+
+            <div class="g_border">
+                <div class="zy_paper_main">
+
+                    <div class="tit clearfix">
+                        <span class="fl baocun">试题内容</span>
+                        <ul class="fr">
+                            <li class="add_question_btn j_add_big_question">添加大题</li>
+                            <li>补录题干/解析</li>
+                            <li>题号模式</li>
+                            <li class="open_analysis j_open_analysis">展开解析</li>
+                        </ul>
+                    </div>
+                    <ul class="task_list j_task_list">
+                        <!--<li class="big_question_list">
+                            <div class="head j_head clearfix">
+                                <b class="tit_num fl">一、</b> 
+                                <div class="tit_cont fl">
+                                    离开撒娇的凉快撒就到了睡了多久说了空间的卢萨卡就对了撒克发来撒看风景两色风景撒浪费空间
+                                    离开撒娇的凉快撒就到了睡了多久说了空间的卢萨卡就对了撒克发来撒看风景两色风景撒浪费空间
+                                </div>
+                                <div class="edit_big_tit fl clearfix">
+                                    <textarea name="" id="" class="fl"></textarea>
+                                    <div class="btn_group fl">
+                                        <button class="sure j_sure">确认</button>
+                                        <button class="cancel j_cancel">取消</button>
+                                    </div>
+                                </div>
+                                <span class="btn">
+                                    <b class="btn_">取消选择</b>
+                                    <b class="btn_edit j_btn_edit">编辑名称</b>
+                                    <b class="btn_add">添加小题</b>
+                                    <b class="btn_sort">设置起始题号</b>
+                                    <b class="btn_move">移动</b>
+                                    <b class="btn_split">拆分</b>
+                                    <b class="btn_delete">删除</b>
+                                </span> 
+                            </div>
+                            <ul class="cont">
+                                <li class="clearfix group j_group">
+                                    <div class="group_head j_group_head">
+                                        <span class="btn">
+                                            <b class="btn_edit j_btn_edit">编辑</b>
+                                            <b class="btn_split j_btn_split">拆分</b>
+                                            <b class="btn_delete j_btn_delete">删除</b>
+                                        </span> 
+                                        <span class="btn fr">
+                                            <b class="btn_sure j_btn_sure">确认</b>
+                                            <b class="btn_cancel j_btn_cancel">取消</b>
+                                        </span>
+                                        <div class="tit_cont">老是看得见分了快啥的积分了开的时间分了</div>
+                                        <div class="editor_unified" id=""></div>
+                                    </div>
+                                    <div class="question j_question">
+                                        <span class="btn fr">
+                                            <b class="btn_edit j_btn_edit">编辑</b>
+                                            <b class="btn_move j_btn_move">移动</b>
+                                            <b class="btn_merge_group j_btn_merge_group">与上题合并为题目组</b>
+                                            <b class="btn_merge j_btn_merge">与上题合并</b>
+                                            <b class="btn_split j_btn_split">拆分</b>
+                                            <b class="btn_delete j_btn_delete">删除</b>
+                                        </span>
+                                        <span class="btn fr">
+                                            <b class="btn_sure j_btn_sure">确认</b>
+                                            <b class="btn_cancel j_btn_cancel">取消</b>
+                                        </span>
+                                        <div class="question_option">
+                                            <div class="question_type clearfix">
+                                                <b class="fl tit_num">1</b> 
+                                                <select class="fl" name="">
+                                                    <option value="请选择题型">请选择题型</option>
+                                                    <option value="单选" data-val="single">单选</option>
+                                                    <option value="多选" data-val="multiple">多选</option>
+                                                    <option value="判断" data-val="judge">判断</option>
+                                                    <option value="简答" data-val="short_answer">简答</option>
+                                                </select> 
+                                                <div class="question_template fl">
+                                                    <span class="fl">答案</span>
+                                                    <div class="all_tem single fl">
+                                                        <ul class="fl">
+                                                            <li>A</li>
+                                                            <li>B</li>
+                                                            <li>C</li>
+                                                            <li>D</li>
+                                                            <li class="btn fl">
+                                                                <img src="img/plus.png" class="plus" />
+                                                                <img src="img/reduce.png" class="reduce" />
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="all_tem multiple fl">
+                                                        <ul class="fl">
+                                                            <li>A</li>
+                                                            <li>B</li>
+                                                            <li>C</li>
+                                                            <li>D</li>
+                                                            <li class="btn fl">
+                                                                <img src="img/plus.png" class="plus"/>
+                                                                <img src="img/reduce.png" class="reduce"/>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="all_tem judge fl">
+                                                        <ul class="fl">
+                                                            <li>对</li>
+                                                            <li>错</li>
+                                                        </ul>
+                                                    </div> 
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="qusetion_main">
+                                            <div class="normal_state">
+                                                <div class="echo_content stem_cont">
+                                                    凯撒角度考虑睡觉啊德里克四大皆空的凯撒角度考虑睡觉啊德里克四大皆空的凯撒角度考虑睡觉啊德里克四大皆空的凯撒角度考虑睡觉啊德里克四大皆空的凯撒角度考虑睡觉啊德里克四大皆空的凯撒角度考虑睡觉啊德里克四大皆空的
+                                                </div>
+                                                <div class="analysis_answer answer_cont clearfix">
+                                                	<span class="fl">答案：</span>
+                                                    <div class="echo_content fl">凯撒角度考虑睡觉啊德里克四大皆空的凯撒角度考虑睡觉啊德里克四大皆空的凯撒角度考虑睡觉啊德里克四大皆空的凯撒角度考虑睡觉啊德里克四大皆空的凯撒角度考虑睡觉啊德里克四大皆空的凯撒角度考虑睡觉啊德里克四大皆空的</div>
+                                                </div>
+                                                <div class="analysis_answer analysis_cont clearfix">
+                                                    <span class="fl">解析：</span>
+                                                    <div class="echo_content fl">凯撒角度考虑睡觉啊德里克四大皆空的凯撒角度考虑睡觉啊德里克四大皆空的凯撒角度考虑睡觉啊德里克四大皆空的凯撒角度考虑睡觉啊德里克四大皆空的凯撒角度考虑睡觉啊德里克四大皆空的凯撒角度考虑睡觉啊德里克四大皆空的</div>
+                                                </div>
+                                            </div>
+                                            <div class="edit_state">
+                                                <div class="stem_cont">
+                                                    <div class="editor_unified" id=""></div>
+                                                </div>
+                                                <div class="analysis_cont">
+                                                    <span>解析：</span>
+                                                    <div class="editor_unified" id=""></div>
+                                                </div>
+                                                <div class="answer_cont">
+                                                    <span>答案：</span>
+                                                    <div class="editor_unified" id=""></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="img_zoom">
+                                            <div class="img_zoom_btn clearfix">
+                                                <b class="narrow fl">－</b>
+                                                <b class="enlarge fl">＋</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </div>
+
+            </div>
+            <table border="" cellspacing="" cellpadding="">
+            	<!--<tr><th>Header</th></tr>-->
+            	<tbody>
+	            	<tr>
+	            		<td rowspan="3">第一学年</td>
+	            		<td>chengji</td>
+	            		<td>2</td>
+	            	</tr>
+	            	<tr>
+	            		<td>defen</td>
+	            		<td>2</td>
+	            	</tr>
+	            	<tr>
+	            		<td>dengji</td>
+	            		<td>2</td>
+	            	</tr>
+            	</tbody>
+            	<!--<tr>
+            		<td>1</td>
+            		<td>1</td>
+            	</tr>-->
+            </table>
+            
+            <!-- 底部 固定格式类名 -->
+            <div class="footer"></div>
+		</div>
+
+</body>
+</html>
